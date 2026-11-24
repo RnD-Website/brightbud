@@ -585,3 +585,7 @@
 main > section, footer.footer { position: relative; }
 footer.footer { overflow: visible; }
 .scallop-top::before, .scallop-bottom::after { z-index: 2; pointer-events: none; }
+
+/* Homepage hero: cream wavy edge along the bottom of the video */
+.hero::after { content: ""; position: absolute; z-index: 3; left: 0; right: 0; bottom: -1px; height: 20px; pointer-events: none;
+  background: radial-gradient(circle at 50% 0, var(--cream) 15px, transparent 16px) 0 0 / 36px 20px repeat-x; transform: scaleY(-1); }
